@@ -1,5 +1,5 @@
-﻿using System;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
+
 namespace Plugin.Badge.Abstractions
 {
     public class TabBadge //: TabbedPage

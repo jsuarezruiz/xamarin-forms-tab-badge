@@ -1,5 +1,4 @@
 ﻿using System;
-
 using Xamarin.Forms;
 using Plugin.Badge.Sample.ViewModels;
 using Plugin.Badge.Abstractions;
@@ -22,6 +21,8 @@ namespace Plugin.Badge.Sample
             _tabbedPage = new TabbedPage
             {
                 Title = "Tab badge sample",
+                BarBackgroundColor = Color.Gray,
+                BarTextColor = Color.Black,
                 Children ={
                     tab1,
                     tab2,
@@ -37,7 +38,7 @@ namespace Plugin.Badge.Sample
             var tab3 = new ContentPage
             {
                 Title = "Tab3",
-                Icon = "tabicon.png",
+                Icon = Device.OS == TargetPlatform.Windows ? "Assets/tabicon.png" : "tabicon.png",
                 Content = new StackLayout
                 {
                     VerticalOptions = LayoutOptions.Center,
