@@ -4,6 +4,7 @@
 ## Sample
 <img src="Screencasts/xamarin.forms.android.gif" height="600"/>
 <img src="Screencasts/xamarin.forms.ios.gif" height="600"/>
+<img src="Screencasts/xamarin.forms.uwp.gif" height="600"/>
 
 ## Support & Limitations
 
@@ -39,6 +40,14 @@ You have to register the custom renderer. I usually put this in the AssemblyInfo
 ### Android
 
 You have to register the custom renderer. I usually put this in the AssemblyInfo.cs file of my Android csproj.
+
+```
+[assembly: ExportRenderer(typeof(TabbedPage), typeof(BadgedTabbedPageRenderer))]
+```
+
+### UWP
+
+You have to register the custom renderer. I usually put this in the AssemblyInfo.cs file of my UWP csproj.
 
 ```
 [assembly: ExportRenderer(typeof(TabbedPage), typeof(BadgedTabbedPageRenderer))]
